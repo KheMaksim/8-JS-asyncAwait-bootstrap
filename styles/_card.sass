@@ -1,0 +1,30 @@
+.card__container
+	+width(1250px)
+	display: flex
+	justify-content: space-evenly
+	flex-wrap: wrap
+	margin-top: 30px
+	margin-inline: auto
+
+.card
+	+width(350px)
+	background: linear-gradient(135deg, rgba(168,132,85,1) 7%,rgba(153,116,56,1) 51%,rgba(124,70,28,1) 100%)
+	border-radius: 15px
+	padding: 10px
+	margin: 15px
+	&:hover
+		box-shadow: 5px 5px 5px $beige
+		transform: translate(-10px, -10px)
+		transition: all 0.5s ease-out
+	&__image
+		border-radius: 15px
+	&-body
+		+dbetween
+	&-title
+		color: rgba(143,2,34,1)
+		padding-bottom: 15px
+	&__btn
+		color: black
+		background: linear-gradient(135deg, rgba(254,252,234,1) 0%,rgba(241,218,54,1) 100%)
+		&:hover
+			color: brown
